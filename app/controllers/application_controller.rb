@@ -8,7 +8,7 @@ class ApplicationController < Sinatra::Base
 
   get "/items" do 
     Item.all.to_json
-  end
+  end 
 
   post '/itemsubmit' do 
     Item.create(
