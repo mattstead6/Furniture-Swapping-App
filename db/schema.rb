@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2022_04_18_140730) do
     t.string "full_name"
     t.string "location"
     t.string "bio"
+    t.string "image"
   end
 
 end

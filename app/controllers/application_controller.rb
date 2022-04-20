@@ -10,6 +10,11 @@ class ApplicationController < Sinatra::Base
     Item.all.to_json
   end 
 
+  get "/users/:id" do
+    User.find(params[:id]).to_json
+  end
+
+
   post '/itemsubmit' do 
     Item.create(
       item_name: params[:item_name],
