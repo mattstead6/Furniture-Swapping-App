@@ -3,14 +3,26 @@ class ApplicationController < Sinatra::Base
   
   # Add your routes here
   get "/users" do
-    User.all.to_json
+    User.all.find(2).to_json(include: :items)
   end
 
   get "/items" do 
-    Item.all.to_json 
+    Item.all.to_json
+  end
+
+  post '/itemsubmit' do 
+    Item.create(
+      item_name: params[:item_name],
+      description: params[:description],
+      original_pricing: params[:original_pricing],
+      condition: params[:condition],
+      image_url: params[:image_url],
+      user_id: params[:user_id]
+    ).to_json
   end
 
 end
+
 
 
 # get "/Users" do
