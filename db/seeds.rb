@@ -2,11 +2,11 @@ puts "🌱 Seeding spices..."
 
 User.destroy_all
 
-u1 = User.create!(full_name: "Jonah Hill", location: "East Village, NY, 10009", bio: "Looking for bright pink sofas!", image: 'https://upload.wikimedia.org/wikipedia/commons/0/0e/Jonah_Hill-4939_%28cropped%29_%28cropped%29.jpg')
-u2 = User.create!(full_name: "Doja Cat", location: "Astoria, NY, 10098", bio: "All I want is a desk", image: 'https://artistbios.nocapshows.com/wp-content/uploads/2021/08/Doja_Cat_in_August_2020.jpg')
-u3 = User.create!(full_name: "McLovin", location: "Williamsburg, NY, 10909", bio: "I love plants!", image: 'https://static.wikia.nocookie.net/p__/images/e/ed/McLovin.jpg/revision/latest?cb=20210323031845&path-prefix=protagonist')
-u4 = User.create!(full_name: "Ronaldo", location: "Bellevue Hill, SC, 80009", bio: 'I really like singing! But I also like to swap furniture.', image: "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2021/12/10/16391545485537.jpg")
-u5 = User.create!(full_name: "Tay Tay", location: "Park Slope, NY, 10087", bio: "I like to flip furniture", image: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/191125_Taylor_Swift_at_the_2019_American_Music_Awards_%28cropped%29.png')
+u1 = User.create!(full_name: "Badgal Ri Ri", location: "East Village, NY, 10009", bio: "Looking for bright pink sofas!", image: 'https://pbs.twimg.com/profile_images/1133109643734130688/BwioAwkz.jpg')
+u2 = User.create!(full_name: "K Money", location: "Astoria, NY, 10098", bio: "All I want is a desk", image: 'https://artistbios.nocapshows.com/wp-content/uploads/2021/08/Doja_Cat_in_August_2020.jpg')
+u3 = User.create!(full_name: "Mattie Stead", location: "Williamsburg, NY, 10909", bio: "I love plants!", image: 'https://media1.popsugar-assets.com/files/thumbor/zan-t_Me63if8oqWYE9ENiPLlhA/0x224:2826x3050/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/02/11/894/n/1922398/87f6bb525e430e7bd44e40.22278576_/i/Drake.jpg')
+u4 = User.create!(full_name: "Lebro bro", location: "Bellevue Hill, SC, 80009", bio: 'I like to swap furniture.', image: "https://hoopshype.com/wp-content/uploads/sites/92/2021/10/i_0d_d7_16_lebron-james.png?w=1000&h=600&crop=1")
+u5 = User.create!(full_name: "Tay Tay", location: "Park Slope, NY, 10087", bio: "I really like singing! I like to flip furniture!", image: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/191125_Taylor_Swift_at_the_2019_American_Music_Awards_%28cropped%29.png')
 
 
 Item.create!(item_name: "Sofa", description: "My bright pink sofa", original_pricing: 1000, condition: 8, image_url: "https://cb2.scene7.com/is/image/CB2/GPCurvoPnkVlvtSfNvPnkSHF18_1x1/$web_pdp_main_carousel_sm$/190905023647/curvo-pink-velvet-sofa.jpg", user: User.all.sample)

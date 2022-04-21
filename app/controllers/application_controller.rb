@@ -3,7 +3,7 @@ class ApplicationController < Sinatra::Base
   
   # Add your routes here
   get "/users" do
-    User.all.find(2).to_json(include: :items)
+    User.all.find(5).to_json(include: :items)
   end
 
   get "/items" do 
@@ -13,6 +13,21 @@ class ApplicationController < Sinatra::Base
   get "/users/:id" do
     User.find(params[:id]).to_json
   end
+
+  delete "/itemdelete/:id" do
+    Item.find(params[:id]).destroy.to_json
+  end
+
+  patch "/item/swap/:id1/:id2" do
+    item1 = Item.find(params[:id1])
+    user1 = item1.user
+    item2 = Item.find(params[:id2])
+    user2 = item2.user
+    item1.update(user: user2).to_json
+    item2.update(user: user1).to_json
+  end
+
+
 
 
   post '/itemsubmit' do 
