@@ -25,7 +25,12 @@ Item.create!(item_name: "Chest Of Drawers", description: "This is a great piece,
 Item.create!(item_name: "Epic Clock", description: "Everybody loves this clock. Highly recommend this piece", original_pricing: 100, condition: 9, image_url: "https://i.pinimg.com/originals/6a/cf/4b/6acf4b7a2989db1f727f0938be2652bf.jpg", user: User.all.sample)
 Item.create!(item_name: "Handmade Pot", description: "I made this ten years ago and have finally decided to let it go. One of my best works", original_pricing: 3000, condition: 10, image_url: "https://images.squarespace-cdn.com/content/v1/54e64524e4b012d8650e4e97/1600569951702-K1BCDYGS7TRKX3RP25FD/mazamar-art-pottery-rabbit-mug.jpg?format=1000w", user: User.all.sample)
 Item.create!(item_name: "Metal Reel Wall Decor", description: "This is a lovely, brand new wall decor. Not for me, that's why I'm selling!", original_pricing: 600, condition: 9, image_url: "https://i5.walmartimages.com/asr/dfd6c856-6ffe-46bf-86e2-becea44c0670_2.50cfd46a7dcef4e207c4e8f526e8a279.jpeg", user: User.all.sample)
-
+Item.create!(item_name: "Yu Gi Oh!", description: "Old Yu Gi Oh cards. Just take them I don't know what to do with them!", original_pricing: 80000, condition: 7, image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoNTnS1HMSOjn_9M-BlAkOSTeJoJve5n1KFmWs900cSHWqUk1OuIZsnq5D36YEuUmEXKI&usqp=CAU", user: User.all.sample)
+Item.create!(item_name: "Painting!", description: "Original painting done by yours truly", original_pricing: 150, condition: 8, image_url: "https://www.parkwestgallery.com/wp-content/uploads/2020/03/im832003.jpg", user: User.all.sample)
+Item.create!(item_name: "Set of Mugs", description: "Come get your mugs!", original_pricing: 30, condition: 7, image_url: "https://cdn.shopify.com/s/files/1/1362/2563/products/Kari_ceramics_handmade_pottery_red_green_turquoise_black_ceramic_mugs_2048x.jpg?v=1625917144", user: User.all.sample)
+Item.create!(item_name: "Jordan Sneakers", description: "Michael Jordan wore this sneakers ya'll", original_pricing: 800, condition: 8, image_url: "http://cdn.cnn.com/cnnnext/dam/assets/200814092431-01b-michael-jordan-sneakers-auction.jpg", user: User.all.sample)
+Item.create!(item_name: "Hat", description: "Mets hat - never used", original_pricing: 35, condition: 10, image_url: "https://www.neweracap.com.au/medias/sys_master/root/root/hb5/h10/9342401216542/9342401216542.png", user: User.all.sample)
+Item.create!(item_name: "Basketball", description: "Old baskebtall I don't use", original_pricing: 50, condition: 4, image_url: "https://thumbs.dreamstime.com/b/old-basketball-basketball-yard-court-vintage-style-73667594.jpg", user: User.all.sample)
 
 puts "✅ Done seeding!"
 
